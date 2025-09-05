@@ -1,10 +1,16 @@
 return {
-    "ellisonleao/gruvbox.nvim",
+    "rose-pine/neovim",
+    name = "rose-pine",
     priority = 1000,
     config = function()
-        require("gruvbox").setup({
-            transparent_mode = true,
+        require("rose-pine").setup({
+            variant = "moon",
+            styles = {
+                bold = true,
+                italic = true,
+                transparency = true,
+            },
         })
-        vim.cmd("colorscheme gruvbox")
+        vim.cmd("colorscheme rose-pine")
     end
 }

@@ -39,7 +39,7 @@ plugins=(
 )
 
 alias setpyenv='source .venv/bin/activate'
-alias ff='fastfetch'
+alias ff='echo "" | fastfetch'
 
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
