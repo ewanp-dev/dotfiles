@@ -12,11 +12,37 @@ SAVEHIST=1000
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/tpe/.zshrc'
-
 autoload -Uz compinit
+zstyle ':completion:*' menu select
+zstyle ':completion:*' matcher-list 'm:{a-zA-z}={A-Za-z}'
+zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
+zstyle ':completion:*' rehash true
+zmodload zsh/complist
 compinit
 # End of lines added by compinstall
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+plugins=(
+    fzf
+    git
+    sudo
+    history-substring-search
+    colored-man-pages
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+    fast-syntax-highlighting
+    zsh-autocomplete
+    zsh-z
+)
+
+alias setpyenv='source .venv/bin/activate'
+alias ff='fastfetch'
+
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+
+ff
+echo ""
+echo ""

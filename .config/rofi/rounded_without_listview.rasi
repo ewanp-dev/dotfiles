@@ -1,0 +1,13 @@
+@import "rounded.rasi"
+
+listview {
+    background-color: @windowbg;
+    require-input: true;
+    border-radius:  0px;
+    border: 2.5px;
+    border-color: @borderfg;
+    columns:    2;
+    fixed-height: false;
+    lines:      5;
+    padding: 15px;
+}

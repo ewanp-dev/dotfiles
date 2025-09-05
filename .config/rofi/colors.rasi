@@ -1,0 +1,9 @@
+* {
+    fg2: #ffb59e;
+    font: "proportional_font SemiBold 13";
+    colorbg: #5d4037cc;
+    textfg: #f1dfda;
+    transparentcolorbg: #ffb59e4d;
+    borderfg:    #ffb59e4d;
+    windowbg:    #271d1bcc;
+}

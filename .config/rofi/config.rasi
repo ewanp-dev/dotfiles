@@ -1,0 +1,14 @@
+
+//@theme "/usr/share/rofi/themes/solarized_alternate.rasi"
+
+@theme "/home/tpe/dotfiles/.config/rofi/rounded_without_listview.rasi"
+
+configuration {
+	font: 	"FiraCode Nerd Font 12";
+}
+
+window {
+	border: 0;
+	padding: 10;
+}
+
