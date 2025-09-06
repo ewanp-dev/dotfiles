@@ -39,10 +39,15 @@ plugins=(
 )
 
 alias setpyenv='source .venv/bin/activate'
-alias ff='echo "" | fastfetch'
+alias ff='echo "" && fastfetch'
+alias nv='nvim'
+alias strata='python main.py ~/lib/usd/ALab-main/ALab/entry.usda'
 
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
-ff
+# Startup commands
+source ~/repos/local/USD-Strata/.venv/bin/activate
+
+fastfetch
 echo ""
 echo ""
