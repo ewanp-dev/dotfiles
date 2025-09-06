@@ -47,3 +47,11 @@ vim.keymap.set('n', '<leader>w', ':write<CR>')
 vim.keymap.set('n', '<leader>q', ':quit<CR>')
 -- vim.keymap.set('n', '<leader>e', ':Explore<CR>')
 
+
+-- transparency
+vim.cmd [[
+    highlight Normal guibg=none
+    highlight NonText guibg=none    
+    highlight Normal ctermbg=none
+    highlight NonText ctermbg=none
+]]
