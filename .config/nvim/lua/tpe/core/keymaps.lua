@@ -1,4 +1,4 @@
-vim.g.mapleader = " " 
+vim.g.mapleader = " "
 
 local keymap = vim.keymap
 
@@ -27,7 +27,7 @@ keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) 
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) --  move current buffer to new tab
 
 -- personal keybinds
-keymap.set("n", "<leader>ca", "gcc", { remap = true, desc = "Comment Line" })
+keymap.set("n", "<leader>cc", "gcc", { remap = true, desc = "Comment Line" })
 keymap.set("n", "<leader>cs", "gccA ", { remap = true, desc = "Create Empty Comment" })
 keymap.set("n", "<leader>ct", "gccA TODO ", { remap = true, desc = "Create TODO Comment" })
 keymap.set("n", "<leader>cn", "gccA NOTE ", { remap = true, desc = "Create NOTE Comment" })
