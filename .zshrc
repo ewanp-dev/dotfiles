@@ -21,6 +21,8 @@ zmodload zsh/complist
 compinit
 # End of lines added by compinstall
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -42,6 +44,10 @@ alias setpyenv='source .venv/bin/activate'
 alias ff='echo "" && fastfetch'
 alias nv='nvim'
 alias strata='python main.py ~/lib/usd/ALab-main/ALab/entry.usda'
+alias ls="echo '' && eza --icons=always"
+alias lh="echo '' && eza --icons=always -lah"
+eval "$(zoxide init zsh)"
+alias cd="z"
 
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 

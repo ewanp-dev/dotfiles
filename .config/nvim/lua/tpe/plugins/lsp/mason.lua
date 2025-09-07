@@ -29,6 +29,7 @@ return {
 			ensure_installed = {
 				"html",
 				"cssls",
+				"clangd",
 				"tailwindcss",
 				"svelte",
 				"lua_ls",
@@ -36,6 +37,8 @@ return {
 				"emmet_ls",
 				"prismals",
 				"pyright",
+				"bashls",
+				"cmake",
 			},
 		})
 
