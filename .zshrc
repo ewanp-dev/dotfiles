@@ -44,6 +44,7 @@ alias setpyenv='source .venv/bin/activate'
 alias ff='echo "" && fastfetch'
 alias nv='nvim'
 alias strata='python main.py ~/lib/usd/ALab-main/ALab/entry.usda'
+alias cat="bat"
 alias ls="echo '' && eza --icons=always"
 alias lh="echo '' && eza --icons=always -lah"
 eval "$(zoxide init zsh)"
@@ -53,6 +54,7 @@ typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
 # Startup commands
 source ~/repos/local/USD-Strata/.venv/bin/activate
+
 
 fastfetch
 echo ""
