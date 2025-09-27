@@ -23,6 +23,7 @@ compinit
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/git/git.plugin.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -47,6 +48,7 @@ alias strata='python main.py ~/lib/usd/ALab-main/ALab/entry.usda'
 alias cat="bat"
 alias ls="echo '' && eza --icons=always"
 alias lh="echo '' && eza --icons=always -lah"
+alias hou='cd /opt/hfs21.0 && source houdini_setup && cd ~ && clear && houdini'
 eval "$(zoxide init zsh)"
 alias cd="z"
 
@@ -59,3 +61,4 @@ source ~/repos/local/USD-Strata/.venv/bin/activate
 fastfetch
 echo ""
 echo ""
+
