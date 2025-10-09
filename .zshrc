@@ -55,7 +55,7 @@ alias cd="z"
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
 # Startup commands
-source ~/repos/local/USD-Strata/.venv/bin/activate
+source ~/repos/local/usd-dependency-viewer/.venv/bin/activate
 
 
 fastfetch
