@@ -44,8 +44,12 @@ vim.opt.splitbelow = true
 vim.g.mapleader = " "
 
 -- vim.keymap.set('n', '<leader>o', ':update<CR> :source<CR>')
-vim.keymap.set("n", "<leader>w", ":write<CR>")
-vim.keymap.set("n", "<leader>q", ":quit<CR>")
+vim.keymap.set("n", "<leader>wq", ":w<CR>")
+vim.keymap.set("n", "<leader>wq", ":wq<CR>")
+vim.keymap.set("n", "<leader>waq", ":wqa<CR>")
+
+vim.keymap.set("n", "<leader>qq", ":quit<CR>")
+vim.keymap.set("n", "<leader>qa", ":qa<CR>")
 -- vim.keymap.set('n', '<leader>e', ':Explore<CR>')
 
 -- transparency
