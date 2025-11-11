@@ -41,6 +41,7 @@ plugins=(
     zsh-z
 )
 
+alias copy='xclip -selection clipboard'
 alias setpyenv='source .venv/bin/activate'
 alias ff='echo "" && fastfetch'
 alias nv='nvim'

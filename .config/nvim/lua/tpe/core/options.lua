@@ -44,7 +44,7 @@ vim.opt.splitbelow = true
 vim.g.mapleader = " "
 
 -- vim.keymap.set('n', '<leader>o', ':update<CR> :source<CR>')
-vim.keymap.set("n", "<leader>wq", ":w<CR>")
+vim.keymap.set("n", "<leader>ww", ":w<CR>")
 vim.keymap.set("n", "<leader>wq", ":wq<CR>")
 vim.keymap.set("n", "<leader>waq", ":wqa<CR>")
 
