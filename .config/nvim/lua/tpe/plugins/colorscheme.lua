@@ -1,18 +1,24 @@
 return {
-	{
-		"ellisonleao/gruvbox.nvim",
-		priority = 1000,
-		config = function()
-			require("gruvbox").setup({
-				contrast = "medium", -- "hard" | "medium" | "soft"
-				palette_overrides = {},
-				transparent_mode = true,
-			})
+	"catppuccin/nvim",
+	name = "catppuccin",
+	priority = 1000,
+	config = function()
+		require("catppuccin").setup({
+			flavour = "mocha", -- latte, frappe, macchiato, mocha
+			transparent_background = true,
+			-- integrations = {
+			--     cmp = true,
+			--     treesitter = true,
+			--     telescope = true,
+			--     gitsigns = true,
+			--     which_key = true,
+			--     notify = true,
+			--     mini = true,
+			--     lsp_trouble = true,
+			-- },
+		})
 
-			-- Set LIGHT mode
-			vim.o.background = "light"
-
-			vim.cmd.colorscheme("gruvbox")
-		end,
-	},
+		-- Set the colorscheme
+		vim.cmd.colorscheme("catppuccin")
+	end,
 }
