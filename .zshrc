@@ -52,6 +52,7 @@ alias lh="echo '' && eza --icons=always -lah"
 alias hou='cd /opt/hfs21.0 && source houdini_setup && cd ~ && clear && houdini'
 eval "$(zoxide init zsh)"
 alias cd="z"
+alias blender="~/blender/blender"
 
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
