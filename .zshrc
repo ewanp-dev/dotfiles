@@ -59,7 +59,9 @@ typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 # Startup commands
 source ~/repos/local/usd-dependency-viewer/.venv/bin/activate
 
-
+figlet -f cosmike SECQNCE
+echo ""
+echo ""
 fastfetch
 echo ""
 echo ""
