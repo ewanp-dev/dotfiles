@@ -1,11 +1,12 @@
 return {
-	"kdheepak/monochrome.nvim",
+	"sainnhe/gruvbox-material",
 	lazy = false,
 	priority = 1000,
 	config = function()
-		vim.cmd("colorscheme monochrome")
-		vim.api.nvim_set_hl(0, "Normal", { bg = "NONE" })
-		vim.api.nvim_set_hl(0, "NormalFloat", { bg = "NONE" })
-		vim.api.nvim_set_hl(0, "SignColumn", { bg = "NONE" })
+		vim.g.gruvbox_material_background = "medium"
+		vim.g.gruvbox_material_foreground = "material"
+		vim.g.gruvbox_material_transparent_background = 1
+
+		vim.cmd.colorscheme("gruvbox-material")
 	end,
 }
