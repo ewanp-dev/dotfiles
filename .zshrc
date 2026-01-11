@@ -1,4 +1,5 @@
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+fastfetch --logo "Windows 95"
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
@@ -57,12 +58,8 @@ alias blender="~/blender/blender"
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
 # Startup commands
-source ~/repos/local/usd-dependency-viewer/.venv/bin/activate
+# source ~/repos/local/usd-dependency-viewer/.venv/bin/activate
 
-figlet -f cosmike SECQNCE
-echo ""
-echo ""
-fastfetch
 echo ""
 echo ""
 
